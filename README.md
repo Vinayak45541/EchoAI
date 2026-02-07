@@ -1,2 +1,2 @@
 # SigmaGPT
-A MERN based ChatGPT replica implemented from scratch using OpenAI.
+A MERN based AI ChatBot implemented from scratch using GeminiAPI.
