@@ -1,4 +1,4 @@
-.chats {
+/* .chats {
     max-width: 700px;
     overflow-y: scroll;
     padding: 8rem;
@@ -31,4 +31,48 @@
 
 pre {
     white-space: pre-wrap;
+} */
+
+:root {
+    --msg-user-bg: #323232;
+    --msg-radius: 14px;
+}
+
+/* Chat message container */
+.chats {
+    max-width: 700px;
+    padding: 8rem;
+    overflow-y: auto;
+}
+
+/* Message alignment */
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+.gptDiv {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* User message bubble */
+.userMessage {
+    background: var(--msg-user-bg);
+    padding: 10px 20px;
+    border-radius: var(--msg-radius);
+    margin-left: 15rem;
+    max-width: 500px;
+    width: fit-content;
+}
+
+/* Code blocks */
+.hljs {
+    border-radius: var(--msg-radius) !important;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
 }

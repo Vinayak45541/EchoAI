@@ -1,4 +1,4 @@
-* {
+/* * {
     color: #ececec;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -11,4 +11,26 @@ body {
 .app {
     background-color: #212121;
     display: flex;
+} */
+
+:root {
+    --bg-main: #212121;
+    --text-primary: #ececec;
+    --font-main: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+}
+
+/* Layout container */
+.app {
+    background: var(--bg-main);
+    display: flex;
+    min-height: 100vh;
 }
